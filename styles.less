@@ -1,4 +1,10 @@
 @width-main: 1280px;
+@fonts-face {
+	font-family: 'ArialMT';
+	src: url('fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 .container{
 	width:  @width-main;
 	margin: 0 auto;
@@ -9,20 +15,18 @@
 	min-height: 323px;
 	box-sizing: border-box;
 	padding: 50px 50px 0px 50px;
-	outline: 1px solid black;
 	background: url(images/header-bg.png);
 }
 .page-header-wrapper{
 	float: left;
 	margin: 0px;
 	padding: 0px;
-	outline: 1px solid black;
 }
 .page-header-title{
 	display: block;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	color: #ffffff;
-	font-family: "Arial MT";
+	font-family: "ArialMT";
 	font-size: 60px;
 	font-weight: 400;
 	margin: 0px 0px 15px 0px;
@@ -35,7 +39,7 @@
 .page-header-list li{
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	color: #ffffff;
-	font-family: "Arial MT";
+	font-family: "ArialMT";
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 36px;
@@ -65,7 +69,6 @@
 	min-height: 300px;
 	box-sizing: border-box;
 	padding: 50px 50px 0px 50px;
-	border: 1px solid red;
 	margin: 0;
 }
 .section1-wrapper{
@@ -93,7 +96,6 @@
 .section-2{
 	width: 100%;
 	min-height: 333px;
-	outline: 1px solid aqua;
 	padding: 0px 0px 0px 50px;
 	box-sizing: border-box;
 	margin: 0;
@@ -108,25 +110,28 @@
 	color: #445161;
 }
 summary::-webkit-details-marker {
-    display: none
+    display: none;
 }
 summary:before {
-    background-color: #445161;
+    background-image: url(images/shape_3_29.jpg);
+    padding: 1px 11px 1px 11px;
     content: "+";
     color: #fff;
- 	padding: -5px 10px 0 0;
     font-weight: bold;
     text-align: center;
-    width: 32px;
     font-size: 25px;
 }
 details[open] summary:before {
     content: "-";
+    padding: 1px 14px 1px 14px;
+}
+.summary1{
+	min-height: 80px;
+	outline: none;
 }
 .paragr-summary{
 	display: block;
-	float: left;
-	margin: -27px 0px 0px 15px;
+	margin: -87px 0px 0px 47px;
 	width: 526px;
 	font-family: ArialMT;
 	font-size: 16px;
@@ -143,7 +148,6 @@ details[open] summary:before {
 .section-3{
 	width: 100%;
 	min-height: 550px;
-	outline: 1px solid red;
 	padding: 51px 0px 49px 50px;
 	margin: 0;
 	box-sizing: border-box;
@@ -158,10 +162,10 @@ details[open] summary:before {
 }
 .section-3-figure{
 	width: 574px;
-	outline: 1px solid green;
 	float: left;
 	margin: 0px 16px 30px 0px;
 }
+
 .section-3-ImgInFigure{
 	float: left;
 	margin:	0px 15px 0px 0px;
