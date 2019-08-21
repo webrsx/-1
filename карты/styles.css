@@ -1,0 +1,60 @@
+.main{
+	position: relative;
+}
+.one{
+	border: 3px solid black;
+	position: absolute;
+	z-index: 1;
+	top: 70px;
+	left: 70px;
+	width: 150px;
+	height: 250px;
+	background-color: pink;
+}
+.two{
+	border: 3px solid black;
+	position: absolute;
+	z-index: 2;
+	top: 90px;
+	left: 90px;
+	width: 150px;
+	height: 250px;
+	background-color: yellow;
+}
+.three{
+	border: 3px solid black;
+	position: absolute;
+	z-index: 3;
+	top: 110px;
+	left: 110px;
+	width: 150px;
+	height: 250px;
+	background-color: aqua;
+}
+.four{
+	border: 3px solid black;
+	position: absolute;
+	z-index: 4;
+	top: 130px;
+	left: 130px;
+	width: 150px;
+	height: 250px;
+	background-color: green
+}
+.five{
+	border: 3px solid black;
+	position: absolute;
+	z-index: 5;
+	top: 150px;
+	left: 150px;
+	width: 150px;
+	height: 250px;
+	background-color: black;
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover{
+	z-index: 6;
+}
