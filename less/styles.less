@@ -130,12 +130,14 @@ summary:before {
     display: block;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 details[open] summary:before {
     content: "-";
     display: block;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 .paragr-summary{
 	display: block;
@@ -343,12 +345,14 @@ article:before {
 	text-transform: uppercase;
 	outline: none;
 	&:hover{
-		color: red;
-		background: saturate(white, 20%);
+		color: saturate(#445161, 5%);
+		background-color: darken(#ffffff, 10%);
+		cursor: pointer;
 	}
 	&:active{
-		color: blue;
-		background: desaturate(white, 20%);
+		color: darken(#445161, 40%);
+		background-color: desaturate(#ffffff, 10%);
+		cursor: pointer;
 	}
 }
 .page-footer{
@@ -390,6 +394,8 @@ input[type="text"]::placeholder{
 	color: #445162;
 }
 input[type="textarea"]::placeholder{
+	position: absolute;
+	bottom: 0;
  	
 }
 input[type="email"],
@@ -419,6 +425,17 @@ input[type="submit"]{
 	text-transform: uppercase;
 	color: #445162;
 	margin: 0 auto;
+	outline: none;
+	&:hover{
+		color: saturate(#445161, 5%);
+		background-color: darken(#ffffff, 10%);
+		cursor: pointer;
+	}
+	&:active{
+		color: darken(#445161, 40%);
+		background-color: desaturate(#ffffff, 10%);
+		cursor: pointer;
+	}
 }
 .footer-skype,
 .footer-icq,
