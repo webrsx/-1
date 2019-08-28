@@ -64,43 +64,43 @@
 .main{
 	box-sizing:border-box;
 }
-.section-1{
+.about-product{
 	width: 100%;
 	min-height: 345px;
 	box-sizing: border-box;
 	padding: 50px 50px 50px 50px;
 	margin: 0;
 }
-.section1-wrapper{
+.about-product-wrapper{
 	width: 649px;
 	float: left;
 }
-.section1-paragr{
+.about-product-paragr{
 	font-family: ArialMT;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
 }
-.section-1-title{
+.about-product-title{
 	font-family: ArialMT;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 400;
 	color: #445161;
 }
-.section1-video{
+.about-product-video{
 	display: block;
 	float: right;
 }
-.section-2{
+.dignity-product{
 	width: 100%;
-	min-height: 465px;
+	min-height: 582px;
 	padding: 50px 50px 50px 50px;
 	box-sizing: border-box;
 	margin: 0;
 }
-.section-2-title{
+.dignity-product-title{
 	clear: both;
 	text-align: center;
 	font-family: ArialMT;
@@ -110,11 +110,12 @@
 	color: #445161;
 }
 details{
-	min-height: 90px;
+	padding: 10px 0px;
 }
 summary{
-	min-height: 90px;
+	width: 526px;
 	outline: none;
+	padding: 10px 0px 0px 0px;
 }
 summary::-webkit-details-marker {
     display: none
@@ -123,11 +124,11 @@ summary:before {
     background-color: #445161;
     content: "+";
     color: #fff;
- 	padding: -5px 10px 0 0;
     font-weight: bold;
     text-align: center;
     font-size: 25px;
     display: block;
+    float: left;
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -139,32 +140,41 @@ details[open] summary:before {
     height: 32px;
     cursor: pointer;
 }
-.paragr-summary{
+.summary{
 	display: block;
 	float: left;
-	margin: -93px 0px 0px 15px;
-	width: 526px;
 	font-family: ArialMT;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
-	padding: 0px 0px 0px 35px;
+	&-p{
+		padding-left: 40px;
+		margin: -4px 0px 0px 0px;
+	}
+	&-p2{
+		font-family: ArialMT;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #333333;
+		padding-left: 40px;
+		margin: -4px 0px 0px 0px;
+	}
 }
 .sum-wrapper{
 	width: 575px;
-	min-height: 270px;
 	float: left;
-	margin: 0px 14px 35px 0px;
+	margin: 0px 15px 0px 0px;
 }
-.section-3{
+.ScreenshotsScreenshots{
 	width: 100%;
 	min-height: 550px;
 	padding: 51px 50px 49px 50px;
 	margin: 0;
 	box-sizing: border-box;
 }
-.h2-section-3{
+.h2-Screenshots{
 	text-align: center;
 	font-family: ArialMT;
 	font-size: 30px;
@@ -172,16 +182,16 @@ details[open] summary:before {
 	font-weight: 400;
 	color: #445161;
 }
-.section-3-figure{
+.Screenshots-figure{
 	width: 574px;
 	float: left;
 	margin: 0px 16px 30px 0px;
 }
-.section-3-img-figure{
+.Screenshots-img-figure{
 	float: left;
 	margin:	0px 15px 0px 0px;
 }
-.section3-h3-figure{
+.Screenshots-h3-figure{
 	text-align: center;
 	font-family: ArialMT;
 	font-size: 24px;
@@ -190,26 +200,26 @@ details[open] summary:before {
 	color: #445161;
 	margin: 0px 0px 15px 0px;
 }
-.section-3-figcaption{
+.Screenshots-figcaption{
 	font-family: ArialMT;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
 }
-.section3-p-figcaption{
+.Screenshots-p-figcaption{
 	width: 	360px;
 	min-height: 89px;
 	padding: 0px 0px 0px 214px;
 	margin: 0;
 }
-.section-4{
+.Reviews{
 	width: 100%;
 	min-height: 487px;
 	box-sizing: border-box;
 	padding: 50px;
 }
-.h2-section-4{
+.h2-Reviews{
 	font-family: ArialMT;
 	font-size: 30px;
 	line-height: 36px;
@@ -217,7 +227,7 @@ details[open] summary:before {
 	color: #445161;
 	text-align: center;
 }
-.section-4-article{
+.Reviews-article{
 	float: left;
 	display: block;
 	width: 574px;
@@ -225,7 +235,7 @@ details[open] summary:before {
 	margin: 0px 16px 24px 0px;
 	box-sizing: border-box;
 }
-.section-4-p{
+.Reviews-p{
 	font-family: ArialMT;
 	font-size: 14px;
 	line-height: 18px;
@@ -234,7 +244,7 @@ details[open] summary:before {
 	color: #333333;
 	overflow: hidden;
 }
-.section-4-span{
+.Reviews-span{
 	font-family: ArialMT;
 	font-size: 14px;
 	line-height: 18px;
@@ -253,14 +263,14 @@ article:before {
 	background-repeat: no-repeat;
 	margin-right: @section-4-mr-img;
 }
-.section-4-par-wrapper{
+.Reviews-par-wrapper{
 	width: 475px;
 	min-height: 121px;
 	overflow: hidden;
 	background-color: #ebebeb;
 }
 
-.section-5{
+.buyitnow{
 	padding: 50px 145px 50px 145px;
 	width: 100%;
 	min-height: 656px;
@@ -270,7 +280,7 @@ article:before {
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.section-5-h2{
+.buyitnow-h2{
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -281,31 +291,31 @@ article:before {
 	color: #445161;
 	text-align: center;
 }
-.section-5-purchase1{
+.buyitnow-purchase1{
 	border: 2px solid #445162;
 	width: 300px;
-	height: 306px;
 	background-color: #445162;
 	border-radius: @section-5-radius;
 	list-style-position: inside;
+	padding: 0px 0px 20px 0px;
 }
-.section-5-purchase2{
+.buyitnow-purchase2{
 	border: 2px solid #445162;
 	width: 300px;
-	height: 404px;
 	background-color: #445162;
 	border-radius: @section-5-radius;
 	list-style-position: inside;
+	padding: 0px 0px 20px 0px;
 }
-.section-5-purchase3{
+.buyitnow-purchase3{
 	border: 2px solid #445162;
 	width: 300px;
-	height: 499px;
 	background-color: #445162;
 	border-radius: @section-5-radius;
 	list-style-position: inside;
+	padding: 0px 0px 20px 0px;
 }
-.section-5-h3{
+.buyitnow-h3{
 	font-family: ArialMT;
 	font-size: 24px;
 	line-height: 30px;
@@ -315,7 +325,7 @@ article:before {
 	padding: 0;
 	margin: 0;
 }
-.section-5-price {
+.buyitnow-price {
 	display: block;
 	text-align: center;
 	width: 300px;
@@ -328,7 +338,7 @@ article:before {
 	font-weight: 400;
 	color: #445162;
 	}
-.section-5-list{
+.buyitnow-list{
 	font-family: ArialMT;
 	font-size: 14px;
 	line-height: 24px;
@@ -337,7 +347,7 @@ article:before {
 }
 .purchase-button{
 	display: block;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	text-align: center;
 	width: 260px;
 	height: 40px;
@@ -404,6 +414,7 @@ input[type="text"]{
 	height: 40px;
 	background-color: #ffffff;
 	margin: 0px 0px 21px 0px;
+	outline: none;
 }
 .textarea{
 	width: 500px;
@@ -411,6 +422,7 @@ input[type="text"]{
 	background-color: #ffffff;
 	resize: none;
 	margin: 0px 0px 21px 0px;
+	outline: none;
 }
 input[type="submit"]{
 	display: block;
